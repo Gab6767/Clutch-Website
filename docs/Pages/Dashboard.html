@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Dashboard</title>
+    <link rel="stylesheet" href="../CSS/Primary-Style.css">
+    <link rel="stylesheet" href="../CSS/Footer-Style.css">
+    <link rel="stylesheet" href="../CSS/Nav-Style.css">
+    <link rel="stylesheet" href="../CSS/Dashboard-Style.css">
+</head>
+<body>
+    <nav class="top-navbar">
+        <div class="nav-brand">
+            <a href="../index.html" class="nav-logo-link">
+                <img src="../Assets/Logo-nav.png" alt="TraceOneAyala" class="nav-img-logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">LOG OUT</a>
+        </div>
+    </nav>
+
+    <div class="filters">
+        <select id="filterItem">
+            <option value="">All Items</option>
+            <option value="Water Bottle">Water Bottle</option>
+            <option value="Jacket">Jacket</option>
+            <option value="Umbrella">Umbrella</option>
+            <option value="Calculator">Calculator</option>
+            <option value="Headphones">Headphones</option>
+        </select>
+
+        <select id="filterArea">
+            <option value="">All Areas</option>
+            <option value="Activity Center">Activity Center</option>
+            <option value="Food Court">Food Court</option>
+            <option value="Cinema Lobby">Cinema Lobby</option>
+            <option value="Parking Level B1">Parking Level B1</option>
+            <option value="Restroom Area">Restroom Area</option>
+        </select>
+
+        <input type="date" id="filterDate">
+
+        <button id="filterBtn">Filter</button>
+        <button id="resetBtn">Reset</button>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="dashboard-title">
+            <h2>Found Items Dashboard</h2>
+            <p>Recently Reported Found Items</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item ID</th>
+                    <th>Found Area</th>
+                    <th>Title</th>
+                    <th>Incident Date</th>
+                    <th>Incident Time</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="row-1 highlight">
+                    <td>#001</td>
+                    <td>Activity Center</td>
+                    <td>Water Bottle, AquaFlask, Black</td>
+                    <td>June 15, 2026</td>
+                    <td>10:30 AM</td>
+                </tr>
+
+                <tr class="row-2">
+                    <td>#002</td>
+                    <td>Food Court</td>
+                    <td>Jacket, Nike, Blue</td>
+                    <td>June 14, 2026</td>
+                    <td>3:45 PM</td>
+                </tr>
+
+                <tr class="row-3 grey">
+                    <td>#003</td>
+                    <td>Cinema Lobby</td>
+                    <td>Umbrella, Fibrella, Red</td>
+                    <td>June 13, 2026</td>
+                    <td>12:15 PM</td>
+                </tr>
+
+                <tr class="row-4">
+                    <td>#004</td>
+                    <td>Parking Level B1</td>
+                    <td>Calculator, Casio, Gray</td>
+                    <td>June 12, 2026</td>
+                    <td>9:20 AM</td>
+                </tr>
+
+                <tr class="row-5 grey">
+                    <td>#005</td>
+                    <td>Restroom Area</td>
+                    <td>Headphones, Sony, White</td>
+                    <td>June 11, 2026</td>
+                    <td>5:10 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<!-- No Footer needed -->
+    <!-- <footer>
+    </footer> -->
+
+    <script src="../Backend/Filter-Logic.js"></script>
+</body>
+</html>
